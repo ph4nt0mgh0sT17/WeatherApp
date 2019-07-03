@@ -59,10 +59,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="API\ApiEngine.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\API\DailyForecast.cs" />
+    <Compile Include="Models\API\Day.cs" />
+    <Compile Include="Models\API\Headline.cs" />
+    <Compile Include="Models\API\Maximum.cs" />
+    <Compile Include="Models\API\Minimum.cs" />
+    <Compile Include="Models\API\Night.cs" />
+    <Compile Include="Models\API\SearchResult.cs" />
+    <Compile Include="Models\API\Temperature.cs" />
+    <Compile Include="Models\API\WeatherForecast.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindowView.xaml.cs">
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -94,9 +105,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
